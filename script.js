@@ -3,7 +3,7 @@
 			let selectYear = document.querySelector('#year')
 			let selectMonth = document.querySelector('#month')
 			let selectDay = document.querySelector('#day')
-			console.log(selectDay)
+			
 			for(let i = 1 ; i <=31; i++){
 				
 			    selectDay.innerHTML+=`<option value='${i}'> ${i}</option>`;
@@ -26,7 +26,7 @@
 		
 			myFunctionYear(new Date().getFullYear() ,1970 )
 			let old = document.querySelector('.textOld');
-			console.log(old)
+			
 		function age(){
 			let yv = selectYear.value;
 			let mv = selectMonth.value;
@@ -46,7 +46,7 @@
 			
 		
 			
-				console.log(m1)
+				
 				let age = y1 - y2; 
 				let m = m1 - m2; 
 				let d = d1 - d2; 
@@ -57,7 +57,7 @@
 					d = (d1 + 31) - d2;
 					
 				}
-				if(m1 <= m2){
+				if(m1 < m2){
 					m = (m1 + 12 ) - m2;
 					m--;
 					age--;
